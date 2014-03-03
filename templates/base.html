@@ -57,6 +57,8 @@
     {% else %}
         <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css"/>
     {% endif %}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap-accessibility.css" type="text/css"/>
+
     <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="{{ SITEURL }}/theme/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css" rel="stylesheet">
@@ -126,7 +128,7 @@
 </div> <!-- /.navbar -->
 
 <div class="container">
-    <div class="row">
+    <div class="row" role="main">
         {% if not HIDE_SIDEBAR or SHOW_ABOUTME %}
         <div class="col-sm-9">
         {% else %}
@@ -156,6 +158,9 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+<!-- Bootstrap accesibility plugin.-->
+<script src="{{ SITEURL }}/theme/js/bootstrap-accessibility.min.js"></script>
+
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="{{ SITEURL }}/theme/js/respond.min.js"></script>
